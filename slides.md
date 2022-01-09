@@ -5,13 +5,14 @@ class: 'text-center'
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Re-Introduce to Git
+  ## Git
 drawings:
   persist: false
+download: true
 
 ---
 
-# **Re**-Introduce to Git
+# Git
 
 ### Han Ning
 
@@ -21,13 +22,13 @@ drawings:
 
 <v-clicks>
 
-- Before the birth of Git, the Linux kernel was developed using the commercial BitKeeper[1] VCS
-- The company that owned BitKeeper placed additional restrictions on its “free as in beer” version in the spring of 2005, the Linux community realized that BitKeeper was no longer a viable solution
-- Torvalds looked for alternatives. Failed. He set out to write his own, the Git
-- Key events of Git
-  - Development began on **3 April 2005**
-  - Torvalds announced the project on **6 April 2005**
-  - Git became self-hosted on **7 April 2005**
+- Before the birth of Git, the Linux kernel was developed using the commercial BitKeeper[1] VCS.
+- The company that owned BitKeeper placed additional restrictions on its “free as in beer” version in the spring of 2005, the Linux community realized that BitKeeper was no longer a viable solution.
+- Torvalds looked for alternatives. Failed. He set out to write his own, the Git.
+- Key events of Git:
+  - Development began on **3 April 2005**.
+  - Torvalds announced the project on **6 April 2005**.
+  - Git became self-hosted on **7 April 2005**.
     ```
     commit e83c5163316f89bfbde7d9ab23ca2e25604af29
     Author: Linus Torvalds <torvalds@ppc970.osdl.org>
@@ -81,81 +82,56 @@ drawings:
 
 ---
 
-# Basic Concepts - Repository
+# Repository
 
-- ### Repository
+- A complete working copy of all the files.
+- A copy of the repository itself.
+  - configurations
+  - **object store**
+  - **index**
+  - ...
 
-  - A complete working copy of all the files.
-  - A copy of the repository itself.
-    - configurations
-    - **object store**
-    - **index**
-    - ...
+<div class="mt-10">
 
 ```shell
 # ls .git        
 branches  COMMIT_EDITMSG  config  description  HEAD  hooks  index  info  logs  objects  refs
 ```
 
----
-
-# Basic Concepts / object store
-
-Git places only four types of objects in object store. These four atomic objects form the foundation of Git’s higher level data structures.
-The object store locates at **.git/objects**
-
-<div grid="~ cols-2 gap-2" m="-t-2" class="justify-items-center text-center">
-
-<v-click>
-
-![Local Image](/blob.png)
-**Blob**
-
-</v-click>
-
-<v-click>
-
-![Local Image](/tree.png)
-**Tree**
-
-</v-click>
-
-<v-click>
-
-![Local Image](/commit.png)
-**Commit**
-
-</v-click>
-
-<v-click>
-
-![Local Image](/tag.png)
-**Tag**
-
-</v-click>
-
 </div>
 
 ---
 
-# Basic Concepts / Object Store / Blob
+# Object Store (1)
 
-<div grid="~ cols-2" class="justify-items-center text-center">
+<div class="mt-10">
+
+### Object store is at the heart of Git's repository implementation. It contains original data files and all the log messages, author information, dates, and other information required to rebuild any version or branch of the project.
+
+</div>
+
+<div grid="~ cols-2 gap-2" class="justify-items-center text-center mt-10">
 
 <div>
 
-![Local Image](/blob.png)
-**Blob**
+```shell
+.git/objects/f1/38820097c8ef62a012205db0b1701df516f6d5
+.git/objects/f4/e5a3565665973603222e2fc71bbbaf76969eaa
+.git/objects/a1/f08a707c39c1d4b539f198b7d5b5ddc1afbb83
+.git/objects/0d/de9ae0b8c4ab9d228f208e8f7d30662c90df96
+.git/objects/ec/9b39b0dc59091bbefb65e2ec17952a092e3fd7
+.git/objects/d7/ab7c6d324521ee35af57953e4e33684484e692
+.git/objects/43/3eb172726bc7b6d60e8d68efb0f0ef4e67a667
+.git/objects/8d/31680a3407185b3ec01edfcd0c352cca6a8f02
+.git/objects/91/20ce65c97c4bd43857fba9f49363e0c966af91
+.git/objects/80/550805d8e2d9630ecd0b6124800dca90b24e33
+```
 
 </div>
 
 <div class="text-left">
 
-```c {1-3|5-10|12-15}
-struct blob {
-	struct object object;
-};
-
+```c
 struct object {
 	unsigned parsed : 1;
 	unsigned type : TYPE_BITS;
@@ -173,15 +149,84 @@ struct object_id {
 
 </div>
 
+---
+
+# Object Store (2)
+
+<div class="mt-10">
+
+### Git places only four types of objects in object store. These four atomic objects form the foundation of Git’s higher level data structures.
+
+</div>
+
+<div grid="~ cols-2 gap-2" class="justify-items-center text-center">
+
+<div>
+
+![Local Image](/blob.png)
+**Blob**
+
+</div>
+
+<div>
+
+![Local Image](/tree.png)
+**Tree**
+
+</div>
+
+<div>
+
+![Local Image](/commit.png)
+**Commit**
+
+</div>
+
+<div>
+
+![Local Image](/tag.png)
+**Tag**
+
+</div>
+
+</div>
+
+---
+
+# Object Store (3)
+
+<div grid="~ cols-2" class="justify-items-center text-center items-center mt-10">
+
+<div>
+
+![Local Image](/blob.png)
+**Blob**
+
+</div>
+
+<div class="text-left">
+
+```c
+struct blob {
+	struct object object;
+};
+
+
+```
+
+</div>
+
+</div>
+
 - contraction of "binary large object".
 - each version of a file is represented as a blob.
 - a blob holds a file's data, but does not contain any metadata, such as file name.
 
 ---
 
-# Basic Concepts / Object Store / Tree
+# Object Store (4)
 
-<div grid="~ cols-2" class="justify-items-center text-center">
+<div grid="~ cols-2" class="justify-items-center text-center items-center mt-10">
 
 <div>
 
@@ -210,9 +255,9 @@ struct tree {
 
 ---
 
-# Basic Concepts / Object Store / Commit
+# Object Store (5)
 
-<div grid="~ cols-2" class="justify-items-center text-center">
+<div grid="~ cols-2" class="justify-items-center text-center items-center mt-10">
 
 <div>
 
@@ -223,7 +268,7 @@ struct tree {
 
 <div class="text-left">
 
-```c{1-8|10-13}
+```c
 struct commit {
 	struct object object;
 	timestamp_t date;
@@ -231,11 +276,6 @@ struct commit {
 
 	struct tree *maybe_tree;
 	unsigned int index;
-};
-
-struct commit_list {
-	struct commit *item;
-	struct commit_list *next;
 };
 ```
 
@@ -249,9 +289,9 @@ struct commit_list {
 
 ---
 
-# Basic Concepts / Object Store / Tag
+# Object Store (6)
 
-<div grid="~ cols-2" class="justify-items-center text-center">
+<div grid="~ cols-2" class="justify-items-center text-center items-center mt-10">
 
 <div>
 
@@ -279,7 +319,7 @@ struct tag {
 
 ---
 
-# Basic Concepts / Object Store
+# Object Store (7)
 
 How Git's objects fit and work together to form the complete system?
 
@@ -296,5 +336,95 @@ How Git's objects fit and work together to form the complete system?
   
   **second commit**
   </div>
+
+</div>
+
+---
+
+# Object Store (8)
+
+<div class="mt-10">
+
+### Storing the complete content of every version of every file is incredibly inefficient. So Git uses a more efficient storage mechanism called a pack file. It only stores the first version of file and deltas.
+
+</div>
+
+<div class="mt-10">
+
+```shell
+host~: git gc
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 36 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (10/10), done.
+Total 10 (delta 0), reused 0 (delta 0)
+```
+
+</div>
+
+---
+
+# Index (1)
+
+<div class="mt-10">
+
+### Linux Torvalds said, "You can’t grasp and fully appreciate the power of Git without first understanding the purpose of the index".
+
+</div>
+
+<div class="mt-10">
+
+- *.git/index*
+- index captures a version of the project’s overall structure at some moment in time.
+- index doesn’t contain any file content; it simply tracks what you want to commit.
+
+</div>
+
+---
+
+# Index (2)
+
+### Init a empty repository, create two files, create a commit.
+
+<div grid="~ col-1" class="justify-items-center">
+
+<img src="/index1.png" class="h-90 mt-10">
+
+</div>
+
+---
+
+# Index (3)
+
+### edit fil1, append ", modified" to the file
+
+<div grid="~ col-1" class="justify-items-center">
+
+<img src="/index2.png" class="h-90 mt-10">
+
+</div>
+
+---
+
+# Index (4)
+
+### *git add file1*.
+
+<div grid="~ col-1" class="justify-items-center">
+
+<img src="/index3.png" class="h-90 mt-10">
+
+</div>
+
+---
+
+# Index (5)
+
+### *git commit -s -m "modify file1"*.
+
+<div grid="~ col-1" class="justify-items-center">
+
+<img src="/index4.png" class="h-90 mt-10">
 
 </div>
