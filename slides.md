@@ -427,3 +427,19 @@ Total 10 (delta 0), reused 0 (delta 0)
 <img src="/index4.png" class="h-90 mt-10">
 
 </div>
+
+---
+
+# Refs & Symrefs
+
+- A ref is an SHA1 hash ID that refers to an object within the Git object store. It usually refers to a commit object. 
+  - heads
+  - tags
+  - remotes/origin
+  - remotes/...
+- A symbolic reference, or symref, is a name that indirectly points to a Git object. It is still just a ref.
+  - HEAD
+  - ORIG_HEAD
+  - FETCH_HEAD
+  - CHERRY_PICK_HEAD
+  - MERGE_HEAD
