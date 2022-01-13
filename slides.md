@@ -95,3 +95,31 @@ src: slides/branch/1.md
 ---
 src: slides/branch/2.md
 ---
+
+---
+src: slides/command/diff1.md
+---
+
+---
+src: slides/command/diff2.md
+---
+
+---
+src: slides/command/reset.md
+---
+
+---
+src: slides/command/cherry-pick.md
+---
+
+---
+src: slides/command/revert.md
+---
+
+---
+src: slides/command/rebase.md
+---
+
+---
+src: slides/command/stash.md
+---
