@@ -28,7 +28,7 @@ src: slides/birth/the-name.md
 ---
 
 ---
-src: slides/repository/1.md
+src: slides/repository.md
 ---
 
 ---
