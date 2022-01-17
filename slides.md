@@ -16,15 +16,15 @@ drawings:
 ### Han Ning
 
 ---
-src: slides/birth/1.md
+src: slides/birth/bitkeeper2git.md
 ---
 
 ---
-src: slides/birth/2.md
+src: slides/birth/key-events.md
 ---
 
 ---
-src: slides/birth/3.md
+src: slides/birth/the-name.md
 ---
 
 ---
