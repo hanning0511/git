@@ -1,4 +1,4 @@
-# Object Store (7)
+# Relaionship
 
 How Git's objects fit and work together to form the complete system?
 

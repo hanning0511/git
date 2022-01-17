@@ -1,4 +1,4 @@
-# Object Store (1)
+# Object
 
 <div class="mt-10">
 

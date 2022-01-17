@@ -32,36 +32,36 @@ src: slides/repository.md
 ---
 
 ---
-src: slides/object/1.md
+src: slides/object/object.md
 ---
 
 ---
-src: slides/object/2.md
+src: slides/object/object-types.md
 ---
 
 ---
-src: slides/object/3.md
+src: slides/object/blob.md
 ---
 
 ---
-src: slides/object/4.md
+src: slides/object/tree.md
 ---
 
 
 ---
-src: slides/object/5.md
+src: slides/object/commit.md
 ---
 
 ---
-src: slides/object/6.md
+src: slides/object/tag.md
 ---
 
 ---
-src: slides/object/7.md
+src: slides/object/object-relationship.md
 ---
 
 ---
-src: slides/object/8.md
+src: slides/object/pack-file.md
 ---
 
 ---

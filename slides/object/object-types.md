@@ -1,4 +1,4 @@
-# Object Store (2)
+# Object Types
 
 <div class="mt-10">
 

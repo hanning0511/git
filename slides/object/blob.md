@@ -1,4 +1,4 @@
-# Object Store (3)
+# Blob
 
 <div grid="~ cols-2" class="justify-items-center text-center items-center mt-10">
 
