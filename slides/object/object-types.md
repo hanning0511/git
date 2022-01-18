@@ -2,8 +2,6 @@
 
 <div class="mt-10">
 
-### Git places only four types of objects in object store. These four atomic objects form the foundation of Git’s higher level data structures.
-
 </div>
 
 <div grid="~ cols-2 gap-2" class="justify-items-center text-center">
@@ -37,3 +35,6 @@
 </div>
 
 </div>
+
+
+<!-- Git places only four types of objects in object store. These four atomic objects form the foundation of Git’s higher level data structures. -->
