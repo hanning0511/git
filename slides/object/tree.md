@@ -1,15 +1,15 @@
 # Tree
 
-<div grid="~ cols-2" class="justify-items-center text-center items-center mt-10">
+<div grid="~ cols-2 gap-4" class="justify-items-left mt-10">
 
 <div>
 
 ![Local Image](/tree.png)
-**Tree**
 
-</div>
+<br/>
+<br/>
 
-<div class="text-left">
+<div>
 
 ```c
 struct tree {
@@ -23,6 +23,12 @@ struct tree {
 
 </div>
 
+<div class="text-2xl">
+
 - represents one level of directory information.
 - records blob identifiers, path names, and a bit of metadata for all the files in one directory.
 - recursively reference other (sub)tree objects.
+
+</div>
+
+</div>

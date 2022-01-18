@@ -1,13 +1,10 @@
 # Tag
 
-<div grid="~ cols-2" class="justify-items-center text-center items-center mt-10">
+<div grid="~ cols-2 gap-4" class="justify-items-left mt-10">
 
 <div>
 
 ![Local Image](/tag.png)
-**Tag**
-
-</div>
 
 <div class="text-left">
 
@@ -24,4 +21,10 @@ struct tag {
 
 </div>
 
+<div>
+
 - assigns an arbitrary yet presumably human readable name to a specific object, usually a commit.
+
+</div>
+
+</div>
