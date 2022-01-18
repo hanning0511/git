@@ -1,6 +1,4 @@
-# Index (5)
-
-### *git commit -s -m "modify file1"*.
+# Commit file1
 
 <div grid="~ col-1" class="justify-items-center">
 

@@ -65,23 +65,23 @@ src: slides/object/pack-file.md
 ---
 
 ---
-src: slides/index/1.md
+src: slides/index/index.md
 ---
 
 ---
-src: slides/index/2.md
+src: slides/index/clean-repository.md
 ---
 
 ---
-src: slides/index/3.md
+src: slides/index/edit-file.md
 ---
 
 ---
-src: slides/index/4.md
+src: slides/index/stage-file.md
 ---
 
 ---
-src: slides/index/5.md
+src: slides/index/commit-file.md
 ---
 
 ---

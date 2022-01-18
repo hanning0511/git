@@ -1,6 +1,4 @@
-# Index (4)
-
-### *git add file1*.
+# Stage file1
 
 <div grid="~ col-1" class="justify-items-center">
 

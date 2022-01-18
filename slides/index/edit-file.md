@@ -1,6 +1,4 @@
-# Index (3)
-
-### edit file1, append ", modified" to the file
+# Edit file1
 
 <div grid="~ col-1" class="justify-items-center">
 
