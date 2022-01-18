@@ -32,7 +32,7 @@ src: slides/repository.md
 ---
 
 ---
-src: slides/object/object.md
+src: slides/object/object-store.md
 ---
 
 ---
