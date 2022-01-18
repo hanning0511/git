@@ -24,7 +24,7 @@ src: slides/birth/key-events.md
 ---
 
 ---
-src: slides/birth/the-name.md
+src: slides/birth/naming.md
 ---
 
 ---
