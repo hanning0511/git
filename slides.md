@@ -8,6 +8,7 @@ info: |
   ## Git
 drawings:
   persist: false
+download: true
 
 ---
 
