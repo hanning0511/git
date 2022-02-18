@@ -7,8 +7,6 @@
 
 <br>
 
-- ### Usages
-
 | | |
 | --- | --- |
 | *git diff* | working directory and index |
