@@ -89,6 +89,10 @@ src: slides/commit/commit-name.md
 ---
 
 ---
+src: slides/commit/commit-history.md
+---
+
+---
 src: slides/branch/2.md
 ---
 
