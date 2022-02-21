@@ -85,7 +85,7 @@ src: slides/index/commit-file.md
 ---
 
 ---
-src: slides/ref/1.md
+src: slides/commit/commit-name.md
 ---
 
 ---
