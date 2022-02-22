@@ -4,7 +4,7 @@
 
 <div>
 
-- Suppose you had a series of commits on your development branch, dev, as shown in beow Figure, and you wanted to introduce them onto the master branch but in a substantially different order.
+- Suppose you had a series of commits on your development branch, dev, as shown in the Figure, and you wanted to introduce them onto the master branch but in a substantially different order.
     ```shell
     git checkout master
     git cherry-pick dev^
@@ -19,17 +19,19 @@
 
 <img src="/git-cherry-pick1.png" class="h-20">
 
-Before cherry-pick
+before cherry-pick
 
 <img src="/git-cherry-pick2.png" class="h-20">
 
-After cherry-pick
+after cherry-pick
 
 </div>
 
 </div>
 
-- *git cherry-pick* also allowed a range of commits to be selected and reapplied in a single command, for example:
+<br/>
+
+- *git cherry-pick* also allowed a range of commits to be selected and reapplied in a single command:
     ```shell
     git cherry-pick X..Z
     ```
