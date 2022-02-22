@@ -113,6 +113,10 @@ src: slides/command/reset.md
 ---
 
 ---
+src: slides/command/merge.md
+---
+
+---
 src: slides/command/cherry-pick.md
 ---
 
