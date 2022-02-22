@@ -24,6 +24,8 @@
 
 <div>
 
+<br/>
+
 - Merge Conflict (demo)
 
 <img src="/merge-conflict.png">
