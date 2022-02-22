@@ -15,9 +15,11 @@
 
 <div>
 
-The *git reset* command changes your repository and working directory to a known state. Specifically, git reset adjusts the <kbd>HEAD</kbd> ref to a given <kbd>commit</kbd> and, by default, updates the index to match that commit. If desired, git reset can also modify your working directory to mirror the revision of your project represented by the given commit.
+The *git reset* command changes your repository and working directory to a known state.
 
-The git reset command has three main options: --soft, --mixed and --hard.
+Specifically, *git reset* adjusts the <kbd>HEAD</kbd> ref to a given <kbd>commit</kbd> and, by default, updates the index to match that commit. If desired, git reset can also modify your working directory to mirror the revision of your project represented by the given commit.
+
+The *git reset* command has three main options: --soft, --mixed and --hard, and the --mixed is default option.
 
 </div>
 
