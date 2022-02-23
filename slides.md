@@ -131,3 +131,7 @@ src: slides/command/rebase.md
 ---
 src: slides/command/stash.md
 ---
+
+---
+src: slides/command/others.md
+---
