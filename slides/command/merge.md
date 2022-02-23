@@ -1,4 +1,4 @@
-# Merge
+# merge
 ---
 
 <div grid="~ cols-2 gap-10" class="mt-5">

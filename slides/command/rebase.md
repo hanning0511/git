@@ -5,6 +5,7 @@
 <div>
 
 1. Suppose you had been working on a topic branch, meanwhile new commits were applied on master branch. Before creating pull request based on the topic branch, you need to rebase to the tip-of-master.
+
     ```shell {monaco}
     git checkout topic
     git rebase master
@@ -16,11 +17,11 @@
 
 <img src="/git-rebase1.png" class="h-20">
 
-Before rebase
+before rebase
 
 <img src="/git-rebase2.png" class="h-20">
 
-After rebase
+after rebase
 
 </div>
 
