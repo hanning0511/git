@@ -7,7 +7,7 @@
 
 <h2>git log</h2>
 
-- <kbd>-\-pretty=\<formatter\></kbd>: format commit info using selected formatter. For instance: short, online, full, etc.
+- <kbd>-\-oneline</kbd>: show commit history in oneline mode.
 - <kbd>-\-graph</kbd>: show graphic view of commit history.
 - <kbd>-N</kbd>: N is an integer, show N commit.
 - <kbd>-p</kbd>: show patch.
